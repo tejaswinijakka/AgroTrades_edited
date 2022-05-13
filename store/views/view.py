@@ -49,6 +49,6 @@ def predict(request):
     else:
         context = {'ans': c}
     return render(request,'crop_pred.html',context)
-
+    
 
 

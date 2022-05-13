@@ -12,7 +12,7 @@ from .views import base2
 
 urlpatterns = [
     path('',Index.as_view(),name='homepage'),
-    path('etrade',etrade, name='etradpage'),
+    path('etrade',etrade, name='etrade'),
     path('crop_prediction',crop_pred,name='croppredpage'),
     path('predict',predict, name='predict'),
 

@@ -17,11 +17,9 @@ class Login(View):
         phone = request.POST.get ('phone')
         password = request.POST.get ('password')
         customer = Customer.get_customer_by_phone (phone)
-        #user = authenticate(username = phone, password = password)
         error_message = None
         if customer:
             flag = check_password (password, customer.password)
-            #login(request, user)
             if flag:
                 request.session['customer'] = customer.id
 

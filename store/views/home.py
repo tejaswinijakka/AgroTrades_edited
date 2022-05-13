@@ -30,7 +30,7 @@ class Index(View):
 
         request.session['cart'] = cart
         print('cart' , request.session['cart'])
-        return redirect('etradpage')
+        return redirect('etrade')
 
 
 
